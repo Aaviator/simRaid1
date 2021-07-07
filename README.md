@@ -11,7 +11,7 @@ Usage:
 `simRaid1` allows you to _basically_ implement a RAID 1 system from a batch file. It's not exactly realtime,
 but it's close enough for most use cases. It essentially uses `robocopy` to mirror one folder/drive/whatever to another. 
 
-It runs the `robocopy` command in an inifinite loop, which checks to see what files have been modified in the source and then only re-writes/modifies those in the destination.
+It runs the `robocopy` command in an infinite loop, which checks to see what files have been modified in the source and then only re-writes/modifies those in the destination.
 
 It comes in handy when setting up RAID from `Disk Management` isn't an option (for example, if you're dealing with are USB drives), or if you just want to mirror two folders.
 
@@ -27,4 +27,6 @@ This script is inferior to regular RAID 1 in many ways, _except_:
  - It allows you to first decrypt an encrypted drive and then start the mirroring process, which is something that cannot be done with `Disk Management`'s mirror functionality.  
  - If the drive you're mirroring to is slower than the main drive (for eg, backing up to an HDD from an SSD), write speeds on the main drive are not affected by the write speeds of the slower drive.  
  - It works with USB/external drives, unlike `Disk Management`
+ - Mirroring can be tunred on/off instantly
+ - No complicated setup required
  
