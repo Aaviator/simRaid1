@@ -13,9 +13,9 @@ but it's close enough for most use cases. It essentially uses `robocopy` to mirr
 
 It runs the `robocopy` command in an infinite loop, which checks to see what files have been modified in the source and then only re-writes/modifies those in the destination.
 
-It comes in handy when setting up RAID from `Disk Management` isn't an option (for example, if you're dealing with are USB drives), or if you just want to mirror two folders.
+It comes in handy when setting up RAID from `Disk Management` isn't an option (for example, if you're dealing with USB drives), or if you just want to mirror two folders.
 
-The `-f` flag speeds operations up, making the script run closer to realtime, but this means that you won't be shown the ETA, junction points will be excluded and that the number of retries in case of failures and wait times between failures are reduced.
+The `-f` flag speeds operations up (fast mode), making the script run closer to realtime, but this means that you won't be shown the ETA, junction points will be excluded and that the number of retries in case of failures and wait times between failures are reduced.
 
 In default mode, the script will retry thrice if it can't read a file, waiting for 3 seconds between each try.  
 In fast mode, the script will retry once if it can't read a file, after a 1 second wait. 
