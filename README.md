@@ -27,6 +27,6 @@ This script is inferior to regular RAID 1 in many ways, _except_:
  - It allows you to first decrypt an encrypted drive and then start the mirroring process, which is something that cannot be done with `Disk Management`'s mirror functionality.  
  - If the drive you're mirroring to is slower than the main drive (for eg, backing up to an HDD from an SSD), write speeds on the main drive are not affected by the write speeds of the slower drive.  
  - It works with USB/external drives, unlike `Disk Management`
- - Mirroring can be tunred on/off instantly
+ - Mirroring can be turned on/off instantly
  - No complicated setup required
  
