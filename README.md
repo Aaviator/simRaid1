@@ -21,6 +21,8 @@ In default mode, the script will retry thrice if it can't read a file, waiting f
 In fast mode, the script will retry once if it can't read a file, after a 1 second wait. 
 You can, of course, change these values in the script.
 
+Note that all filesystem reads take place from the source directory, the destination directory simply contains an up-to-date copy. Filesystem read/write speeds are not impacted.
+
 This script is inferior to regular RAID 1 in many ways, _except_:
 
  - It works with (sub-)folders, not just drives.  
