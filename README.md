@@ -8,8 +8,8 @@ Usage:
   simRaid1.cmd <source_dir>\ <destination_dir>\ [-f]
 ```
 
-`simRaid1` allows you to _basically_ implement a RAID 1 system from a batch file. It's not exactly realtime,
-but it's close enough for most use cases. It essentially uses `robocopy` to mirror one folder/drive/whatever to another. 
+`simRaid1` allows you to _sorta_ implement a RAID 1 system from a batch file. It's not exactly realtime,
+but it's close enough for many use cases. It essentially uses `robocopy` to mirror one folder/drive/whatever to another. 
 
 It runs the `robocopy` command in an infinite loop, which checks to see what files have been modified in the source and then only re-writes/modifies those in the destination.
 
